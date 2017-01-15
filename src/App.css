@@ -1,3 +1,9 @@
+.AppContainer {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
 .inlineContainerApp {
   display: -webkit-flex;
   display: flex;
