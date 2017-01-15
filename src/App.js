@@ -4,7 +4,8 @@ import './App.css';
 
 import Contribute from './Contribute.js';
 import Navigate from './Nav.js';
-import { Image } from 're-bulma';
+import { Nav, NavGroup, NavItem, Icon, Image, NavToggle, Button, Select } from 're-bulma';
+
 import kirsten from './Kirsten.png'
 
 
@@ -31,6 +32,30 @@ class App extends Component {
             </div>
           </div>
         </div>
+        <Nav>
+          <NavGroup align="left">
+            <NavItem>
+              Overview
+            </NavItem>
+            <NavItem>
+              Support
+            </NavItem>
+            <NavItem>
+              Contribute
+            </NavItem>
+            <NavItem>
+              About
+            </NavItem>
+          </NavGroup>
+          <NavToggle />
+          <NavGroup align="right" isMenu>
+            <NavItem>
+              <Button>
+                Follow
+              </Button>
+            </NavItem>
+          </NavGroup>
+        </Nav>
 
         <Contribute />
       </div>

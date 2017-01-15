@@ -20,31 +20,7 @@ class Contribute extends Component {
     return (
       <div>
         <div className="container">
-
-          <Nav>
-            <NavGroup align="left">
-              <NavItem>
-                Overview
-              </NavItem>
-              <NavItem>
-                Support
-              </NavItem>
-              <NavItem>
-                Contribute
-              </NavItem>
-              <NavItem>
-                About
-              </NavItem>
-            </NavGroup>
-            <NavToggle />
-            <NavGroup align="right" isMenu>
-              <NavItem>
-                <Button>
-                  Follow
-                </Button>
-              </NavItem>
-            </NavGroup>
-          </Nav>
+          
           {/* <div className="stand"> */}
           <div className="floatLeft">
             <div className="donate">
