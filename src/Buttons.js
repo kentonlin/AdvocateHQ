@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Cart from '../src/Cart'
+import Stripe from '../src/Stripe'
 
 var Buttons = React.createClass ({
 
@@ -72,6 +73,12 @@ console.log('100 sumbit', this.state.cartArr)
 
         <Cart cartArr={this.state.cartArr}
         total={this.state.total} />
+
+
+
+       <div>
+        <Stripe {...this.props} token={this.props.token} />
+      </div>
       </div>
 		)
 	}

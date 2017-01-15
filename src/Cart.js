@@ -6,7 +6,7 @@ const Cart = (props) => (
 		<div>
 		{props.cartArr.map((cartArr,i) => (
 			<div key={i}>
-						<span style={{padding:'15px'}}>Donation{cartArr}</span>
+						<span style={{padding:'15px'}}>Donation    {cartArr}</span>
 			</div>
 		)
 		)}
