@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './Contribute.css';
 import Card1 from './Card1.js';
+import Card2 from './Card2.js';
+import Card3 from './Card3.js';
+import Card4 from './Card4.js';
+
+
 import { Nav, NavGroup, NavItem, Icon, Image, NavToggle, Button, Select } from 're-bulma';
 import Buttons from './Buttons.js'
 var Router = require('react-router');
@@ -95,7 +100,7 @@ class Contribute extends Component {
 
 
 checkout(e) {
-   
+
     var cartArr = this.state.cartArr
     var total = this.state.total
 
@@ -106,30 +111,6 @@ checkout(e) {
       <div>
         <div className="container">
 
-          <Nav>
-            <NavGroup align="left">
-              <NavItem>
-                Overview
-              </NavItem>
-              <NavItem>
-                Support
-              </NavItem>
-              <NavItem>
-                Contribute
-              </NavItem>
-              <NavItem>
-                About
-              </NavItem>
-            </NavGroup>
-            <NavToggle />
-            <NavGroup align="right" isMenu>
-              <NavItem>
-                <Button>
-                  Follow
-                </Button>
-              </NavItem>
-            </NavGroup>
-          </Nav>
           {/* <div className="stand"> */}
           <div className="floatLeft">
             <div className="donate">
@@ -161,6 +142,7 @@ checkout(e) {
               </Select>
             </div>
 
+
             <Card1 />
             <Buttons handleSubmit5={this.handleSubmit5.bind(this)}
             handleSubmit25={this.handleSubmit25.bind(this)}
@@ -168,6 +150,7 @@ checkout(e) {
             handleSubmit100={this.handleSubmit100.bind(this)}
             checkout={this.checkout.bind(this)}/>
             <div> RUNNING TOTAL{this.state.total} </div>
+
           </div>
 
         </div>

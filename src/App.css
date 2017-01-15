@@ -1,3 +1,16 @@
-/*.App {
-  text-align: center;
-}*/
+.AppContainer {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.inlineContainerApp {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  /*background-color: red;*/
+}
+.inlineApp {
+  margin-left: 30px;
+  margin-top: 10px;
+}

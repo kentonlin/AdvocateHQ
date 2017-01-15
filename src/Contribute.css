@@ -1,6 +1,6 @@
 .container {
-  width: 80%;
   height: 1405px;
+  width: 900px;
   background-color: grey;
 }
 .center {
@@ -24,6 +24,9 @@
 }
 .inline {
   display: inline;
+}
+.inline10 {
+  margin-top: 200px;
 }
 /*.stand {
   width: 460px;
