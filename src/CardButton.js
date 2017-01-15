@@ -47,11 +47,11 @@ var CardButton = React.createClass({
 
 				<button  style={{marginRight:800, marginTop: 20}}className='submitBtn' type='submit' onClick={this.buttonHandleSubmit}>
         submit</button>
-			
+
 			<Total cardButtonArr={this.state.cardButtonArr} 
 							total={this.state.total}
 							/>
-			
+
 		</div>
 
 

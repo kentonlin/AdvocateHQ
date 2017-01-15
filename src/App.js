@@ -10,6 +10,8 @@ import kirsten from './Kirsten.png'
 
 
 class App extends Component {
+
+
   render() {
     return (
       <div className="AppContainer">
@@ -58,8 +60,8 @@ class App extends Component {
             </NavGroup>
           </Nav>
 
-          <Contribute />
-        </div>
+      <div> {this.props.children} </div>
+      </div>
       </div>
     );
   }

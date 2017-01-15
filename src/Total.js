@@ -4,13 +4,6 @@ const Total = (props) => (
 
 <div>
 	
-	{props.cardButtonArr.map((cardButton,i)=>
-		<div>
-			<span style={{padding:'15px'}}> {cardButton} </span>
-		</div>
-
-
-	)}
 	<span>TOTAL {props.total}</span>
 
 </div>
@@ -18,3 +11,10 @@ const Total = (props) => (
 )
 
 export default Total
+	// {props.cardButtonArr.map((cardButton,i)=>
+	// 	<div>
+	// 		<span style={{padding:'15px'}}> {cardButton} </span>
+	// 	</div>
+
+
+	// )}
