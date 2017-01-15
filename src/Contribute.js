@@ -17,9 +17,44 @@ class Contribute extends Component {
     this.state = {
       points: 75,
       cartArr: [],
-      total: 0
+      total: 0,
+      quantityArr: []
     };
+    this.handleEvent = this.handleEvent.bind(this);
+    this.getTotal = this.getTotal.bind(this);
+    this.setTotal = this.setTotal.bind(this);
   }
+
+  handleEvent(e){
+    console.log('value',e.target.value);
+    var array = this.state.quantityArr.slice()
+    array.push(e.target.value)
+    // e.preventDefault()
+    this.setState({
+      "quantityArr": array
+    }, this.getTotal)
+  }
+
+  getTotal(){
+    var mapped = this.state.quantityArr.map(function(element){
+      return +element * 5;
+    })
+    console.log(mapped);
+    let total = this.state.total
+    var reduced = mapped.reduce(function(total, element){
+      return total + element;
+    },0)
+    console.log('reduced',reduced);
+
+    this.setTotal(reduced);
+  }
+
+  setTotal(result){
+    this.setState({
+      total: result
+    });
+  }
+
 
 
   handleSubmit5(e) {
@@ -142,28 +177,27 @@ checkout(e) {
               </Select>
             </div>
             <div className="inlineContainer donate">
-+              <div className="inline">
-+                <Card1 />
-+              </div>
-+              <div className="inline">
-+                <Card2 />
-+              </div>
-+            </div>
-+            <div className="inlineContainer donate">
-+              <div className="inline">
-+                <Card3 />
-+              </div>
-+              <div className="inline">
-+                <Card4 />
-+              </div>
-+            </div>
+              <div className="inline">
+               <Card1 handleEvent= {this.handleEvent} />
+               </div>
+               <div className="inline">
+                 <Card2 handleEvent= {this.handleEvent}/>
+               </div>
+             </div>
+             <div className="inlineContainer donate">
+              <div className="inline">
+                 <Card3 handleEvent= {this.handleEvent}/>
+               </div>
+               <div className="inline">
+                 <Card4 handleEvent= {this.handleEvent}/>
+              </div>
+            </div>
 
             <Buttons handleSubmit5={this.handleSubmit5.bind(this)}
             handleSubmit25={this.handleSubmit25.bind(this)}
             handleSubmit50={this.handleSubmit50.bind(this)}
             handleSubmit100={this.handleSubmit100.bind(this)}
             checkout={this.checkout.bind(this)}/>
-            <div> RUNNING TOTAL{this.state.total} </div>
 
           </div>
 
@@ -172,7 +206,7 @@ checkout(e) {
         TOTAL {this.state.total}
         </div>
         <div>
-         <Link to={'/cart/' + this.state.cartArr}>
+         <Link to={'/cart/' + this.state.quantityArr + '/' + this.state.total}>
       <button className="btn hidden-sm-down" type='submit'>
         <span className="glyphicon glyphicon-search"></span>
         CHECKOUT

@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import './Card.css';
-import { Progress } from 're-bulma';
+import { Progress, Input } from 're-bulma';
+import card2 from './card2.png';
 
 class Card2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      percent: 30
+      percent: 90,
+      quantity: 0
     };
   }
   render() {
     return (
       <div className="cardContainer">
-        <img src="https://s.bsd.net/bernie16/main/page/-/website/fb-share.png" alt="Card Image" height="200px" width="100%"/>
+        <img src={card2} alt="Card Image" height="200px" width="100%"/>
         <div className="card">
           <div className="leftContainer">
             <h2> Title: Bernie2 </h2>
@@ -26,6 +28,7 @@ class Card2 extends Component {
           <div className="center">
             <Progress value={this.state.percent} max="100" style={{ marginBottom: '5px' }} />
           </div>
+            <Input type="text" placeholder="Text input" onChange={this.props.handleEvent}/>
           {/* <h1> {this.props.description}</h1>
           <img src="" alt="Smiley face" height="100%" width="100%"/> */}
         </div>

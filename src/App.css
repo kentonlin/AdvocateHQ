@@ -2,15 +2,18 @@
   display: -webkit-flex;
   display: flex;
   justify-content: center;
+  /*background-color: blue;*/
+  margin-top: 20px;
 }
 
 .inlineContainerApp {
   display: -webkit-flex;
   display: flex;
   justify-content: flex-start;
+
   /*background-color: red;*/
 }
 .inlineApp {
-  margin-left: 30px;
-  margin-top: 10px;
+  margin-left: 25px;
+  margin-top: 20px;
 }

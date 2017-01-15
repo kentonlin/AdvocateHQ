@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Nav.css';
 import { Nav, NavGroup, NavItem, Icon, Image, NavToggle, Button} from 're-bulma';
+import logo from './logo.png';
+import avatar from './avatar.png';
 
 class Navigate extends Component {
   render() {
@@ -8,21 +10,21 @@ class Navigate extends Component {
       <div>
         <Nav>
           <NavGroup align="left">
-            <NavItem>
-              advocate
+            <NavItem style={{marginBottom: "2px"}}>
+              <img src={logo} />
             </NavItem>
-            <NavItem>
-              <Icon icon="fa fa-search" size="isSmall" />
-              Enter an address to find representatives
+            <NavItem style={{fontFamily: "openSans", color: "#c0c0c0", marginBottom: "3px"}}>
+              <Icon icon="fa fa-search" size="isSmall" style={{marginRight: "10px"}} />
+                Enter an address to find representatives
             </NavItem>
           </NavGroup>
           <NavToggle />
           <NavGroup align="right" isMenu>
-            <NavItem>
+            <NavItem style={{fontFamily: "openSans", marginBottom: "10px"}}>
               Create a Campaign
             </NavItem>
             <NavItem>
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Bernie_Sanders.jpg/220px-Bernie_Sanders.jpg" size="is24X24" style={{}} />
+              <Image src={avatar} size="is24X24" style={{ marginBottom: "10px"}} />
             </NavItem>
           </NavGroup>
         </Nav>

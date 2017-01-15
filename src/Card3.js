@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './Card.css';
-import { Progress } from 're-bulma';
+import { Progress, Input } from 're-bulma';
 
 class Card3 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      percent: 30
+      percent: 38,
+      quantity: 0
     };
   }
   render() {
@@ -26,6 +27,7 @@ class Card3 extends Component {
           <div className="center">
             <Progress value={this.state.percent} max="100" style={{ marginBottom: '5px' }} />
           </div>
+            <Input type="text" placeholder="Text input" onChange={this.props.handleEvent}/>
           {/* <h1> {this.props.description}</h1>
           <img src="" alt="Smiley face" height="100%" width="100%"/> */}
         </div>
