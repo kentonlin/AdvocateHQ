@@ -13,14 +13,14 @@ class Navigate extends Component {
             <NavItem style={{marginBottom: "2px"}}>
               <img src={logo} />
             </NavItem>
-            <NavItem style={{fontFamily: "openSans", color: "#c0c0c0", marginBottom: "3px"}}>
+            <NavItem style={{fontFamily: "Open Sans", color: "#c0c0c0", marginBottom: "3px"}}>
               <Icon icon="fa fa-search" size="isSmall" style={{marginRight: "10px"}} />
                 Enter an address to find representatives
             </NavItem>
           </NavGroup>
           <NavToggle />
           <NavGroup align="right" isMenu>
-            <NavItem style={{fontFamily: "openSans", marginBottom: "10px"}}>
+            <NavItem style={{fontFamily: "Open Sans", marginBottom: "10px"}}>
               Create a Campaign
             </NavItem>
             <NavItem>

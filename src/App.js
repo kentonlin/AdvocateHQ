@@ -19,10 +19,10 @@ class App extends Component {
             <div className="inlineContainerApp">
               <img src={kirsten} style={{ borderRadius: "50%", width: '100px', height: '100px', display: 'inline', marginTop:"5px", marginBottom: "3px"}} />
               <div className="inlineApp">
-                <div style={{color: "#6f6f6f", fontFamily: "OpenSans", fontSize: "13px"}}>
+                <div style={{color: "#6f6f6f", fontFamily: "Open Sans", fontSize: "13px"}}>
                   Democrat for U.S. Senate
                 </div>
-                <div style={{fontFamily: "OpenSans", fontSize: "24px", fontWeight: "600", fontStyle: "normal",
+                <div style={{fontFamily: "Open Sans", fontSize: "24px", fontWeight: "600", fontStyle: "normal",
                 	fontStretch: "normal",
                 	lineHeight: "1.25",
                 	letterSpacing: "normal"
@@ -33,7 +33,7 @@ class App extends Component {
                   </span>
                 </div>
                 <div style={{
-                  fontFamily: "OpenSans",
+                  fontFamily: "Open Sans",
                 	fontSize: "15px",
                 	fontWeight: "600",
                 	fontStyle: "normal",
@@ -45,7 +45,7 @@ class App extends Component {
                   Senator, U.S. Senate New York
                 </div>
                 <div style={{
-                  fontFamily: "OpenSans",
+                  fontFamily: "Open Sans",
                 	fontSize: "13px",
                 	fontWeight: "normal",
                 	fontStyle: "normal",

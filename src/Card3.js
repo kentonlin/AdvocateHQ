@@ -9,6 +9,12 @@ class Card3 extends Component {
       percent: 38,
       quantity: 0
     };
+    this.changeInput = this.changeInput.bind(this);
+  }
+  changeInput(event){
+    this.setState({quantity: event.target.value}
+    );
+
   }
   render() {
     return (
@@ -19,7 +25,14 @@ class Card3 extends Component {
             <h2> Title: Bernie3 </h2>
           </div>
           <div className="leftContainer">
-            <div>  Description: Description for Bernie </div>
+            <div> Your neighbors watch TV. Hence, we need to be on TV. Help us help your neighbors and spend some dolla on TV ads. </div>
+          </div>
+        <br/>
+        <br/>
+          <div className="buttonContain">
+            <button type="button" onclick="alert('Hello world!')" style={{width: "88px", height: "34px", borderRadius: "3px",
+  backgroundColor: "#3db7c9", border: "solid 2px #dbe7ea", color: "white"}}>${this.state.quantity * 5 || 5}</button>
+  <Input type="text" placeholder="Quantity" onChange={function(event){ this.props.handleEvent(event); this.changeInput(event)}.bind(this)} style={{width: "88px"}}/>
           </div>
           <div className="leftContainer">
             {this.state.percent}% of Goal Reached
@@ -27,7 +40,6 @@ class Card3 extends Component {
           <div className="center">
             <Progress value={this.state.percent} max="100" style={{ marginBottom: '5px' }} />
           </div>
-            <Input type="text" placeholder="Text input" onChange={this.props.handleEvent}/>
           {/* <h1> {this.props.description}</h1>
           <img src="" alt="Smiley face" height="100%" width="100%"/> */}
         </div>

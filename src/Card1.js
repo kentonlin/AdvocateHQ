@@ -35,7 +35,13 @@ class Card1 extends Component {
             <h2> Title: Bernie </h2>
           </div>
           <div className="leftContainer">
-            <div>  Description: Description for Bernie </div>
+            <div>  We might not have music, but we do like call and response, especially the civic kind.  Help us pull together a Townhall with your fellow citizens. </div>
+          </div>
+          <br/>
+          <div className="buttonContain">
+            <button type="button" onclick="alert('Hello world!')" style={{width: "88px", height: "34px", borderRadius: "3px",
+	backgroundColor: "#3db7c9", border: "solid 2px #dbe7ea", color: "white"}}>${this.state.quantity * 5 || 5}</button>
+            <Input type="text" placeholder="Quantity" onChange={function(event){ this.props.handleEvent(event); this.changeInput(event)}.bind(this)} style={{width: "88px"}}/>
           </div>
           <div className="leftContainer">
             {this.state.percent}% of Goal Reached
@@ -44,7 +50,6 @@ class Card1 extends Component {
             <Progress value={this.state.percent} max="100" style={{ marginBottom: '5px' }} />
           </div>
 
-          <Input type="text" placeholder="Text input" onChange={this.props.handleEvent}/>
           {/* <h1> {this.props.description}</h1>
           <img src="" alt="Smiley face" height="100%" width="100%"/> */}
         </div>

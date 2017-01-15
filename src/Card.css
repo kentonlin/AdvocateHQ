@@ -1,6 +1,6 @@
 .cardContainer {
-  height: 460px;
-  width: 290px;
+  height: 500px;
+  width: 300px;
   /*background-color: red;*/
   /*color: red;*/
 }
@@ -8,4 +8,11 @@
   display: -webkit-flex;
   display: flex;
   justify-content: flex-start;
+}
+.buttonContain {
+  display: flex;
+  justify-content:flex-start;
+}
+.marginBottom {
+  .margin-top:100px;
 }
