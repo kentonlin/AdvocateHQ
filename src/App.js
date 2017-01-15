@@ -12,8 +12,7 @@ import kirsten from './Kirsten.png'
 class App extends Component {
   render() {
     return (
-      <div className="AppContainer">
-        
+      <div className="AppContainer">    
         <div className="App">
           <Navigate />
           <div className="inlineContainerApp">

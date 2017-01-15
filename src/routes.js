@@ -1,16 +1,20 @@
-import React from 'react';
-import { Router, Route } from 'react-router';
+import React from 'react'
+import App from './App'
+import Contribute from './Contribute'
+import Cart from './Cart'
+import { Router, Route, IndexRoute, hashHistory, browserHistory} from 'react-router';
 
-import App from './App';
-// import About from './components/About';
-// import NotFound from './components/NotFound';
+var routes = (
 
-const Routes = (props) => (
-  <Router {...props}>
-    <Route path="/" component={App} />
-    {/* <Route path="/about" component={About} /> */}
-    {/* <Route path="*" component={NotFound} /> */}
-  </Router>
-);
+<Router history={browserHistory}>
+	<Route path='/' component={App}>
+	<IndexRoute component={Contribute}/>
+	</Route>
+	<Route path='/cart/:cartArr' component={Cart}/>
+</Router>
+)
 
-export default Routes;
+ module.exports = routes
+	// <Route path='/Comments/*' component={Comments}/>
+	// <Route path='/autocomplete/' component={MaterialUIAutocomplete}/>
+
