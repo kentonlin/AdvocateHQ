@@ -13,7 +13,6 @@ class App extends Component {
     return (
       <div className="App">
 
-<<<<<<< HEAD
         <Navigate />
           <img src={kirsten} style={{ borderRadius: "50%", width: '100px', height: '100px', display: 'inline'}} />
           <div className="inline">
@@ -32,10 +31,6 @@ class App extends Component {
           </div>
         </div>
         <Contribute />
-=======
-      <Navigate />
-      <Contribute />
->>>>>>> 4acd2d4c1d7a8f67daa466801fe165f2f5af3711
       </div>
     );
   }
