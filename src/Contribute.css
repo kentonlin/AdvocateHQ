@@ -1,7 +1,7 @@
 .container {
   height: 1405px;
   width: 900px;
-  background-color: grey;
+  /*background-color: grey;*/
 }
 .center {
   display: -webkit-flex;
