@@ -7,12 +7,14 @@ import Navigate from './Nav.js';
 
 
 class App extends Component {
+
+
   render() {
     return (
       <div className="App">
 
       <Navigate />
-      <Contribute />
+      <div> {this.props.children} </div>
       </div>
     );
   }
