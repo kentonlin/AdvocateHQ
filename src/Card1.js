@@ -26,8 +26,12 @@ class Card1 extends Component {
           <div className="center">
             <Progress value={this.state.percent} max="100" style={{ marginBottom: '5px' }} />
           </div>
-          {/* <h1> {this.props.description}</h1>
-          <img src="" alt="Smiley face" height="100%" width="100%"/> */}
+
+          // div container
+            // button on click calls function passProps
+              // button will change amount by change to total
+                // passProps will pass total, quantity, card image, and title to Contribute
+
         </div>
       </div>
     );

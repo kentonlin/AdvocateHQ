@@ -20,7 +20,7 @@ class Contribute extends Component {
     return (
       <div>
         <div className="container">
-          
+
           {/* <div className="stand"> */}
           <div className="floatLeft">
             <div className="donate">
@@ -72,6 +72,15 @@ class Contribute extends Component {
           </div>
 
         </div>
+
+
+        // on submit of button continue;
+          //pass props while also linking to component checkout
+            // pass total, totalArray, props of various cards 
+
+        // contribute amounts which will have buttons for different amounts and input field
+          // on submit Link to route: component (checkout)
+          // pass state of total
 
       </div>
 
