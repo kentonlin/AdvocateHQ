@@ -1,0 +1,31 @@
+.container {
+  width: 80%;
+  height: 1405px;
+  background-color: grey;
+}
+.center {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.donate {
+  width: 600px;
+}
+.floatLeft {
+
+  float: left;
+}
+.inlineContainer {
+  display: -webkit-flex;
+   display: flex;
+   -webkit-justify-content: space-between;
+   justify-content: space-between;
+}
+.inline {
+  display: inline;
+}
+/*.stand {
+  width: 460px;
+  height: 173px;
+}*/
