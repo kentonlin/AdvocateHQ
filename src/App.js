@@ -14,22 +14,24 @@ class App extends Component {
       <div className="App">
 
         <Navigate />
+        <div className="inlineContainerApp">
           <img src={kirsten} style={{ borderRadius: "50%", width: '100px', height: '100px', display: 'inline'}} />
-          <div className="inline">
-
-          <div>
-            Democrat for U.S. Senate
-          </div>
-          <div>
-            Kirsten Gillibrand
-          </div>
-          <div>
-            Senator, U.S. Senate New York
-          </div>
-          <div>
-            Incumbent
+          <div className="inlineApp">
+            <div>
+              Democrat for U.S. Senate
+            </div>
+            <div>
+              Kirsten Gillibrand
+            </div>
+            <div>
+              Senator, U.S. Senate New York
+            </div>
+            <div>
+              Incumbent
+            </div>
           </div>
         </div>
+
         <Contribute />
       </div>
     );

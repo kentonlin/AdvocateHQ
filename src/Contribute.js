@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './Contribute.css';
 import Card1 from './Card1.js';
+import Card2 from './Card2.js';
+import Card3 from './Card3.js';
+import Card4 from './Card4.js';
+
+
 import { Nav, NavGroup, NavItem, Icon, Image, NavToggle, Button, Select } from 're-bulma';
 
 
@@ -71,7 +76,23 @@ class Contribute extends Component {
               </Select>
             </div>
 
-            <Card1 />
+            <div className="inlineContainer donate">
+              <div className="inline">
+                <Card1 />
+              </div>
+              <div className="inline">
+                <Card2 />
+              </div>
+            </div>
+            <div className="inlineContainer donate">
+              <div className="inline">
+                <Card3 />
+              </div>
+              <div className="inline">
+                <Card4 />
+              </div>
+            </div>
+
           </div>
 
         </div>

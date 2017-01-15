@@ -25,6 +25,9 @@
 .inline {
   display: inline;
 }
+.inline10 {
+  margin-top: 200px;
+}
 /*.stand {
   width: 460px;
   height: 173px;

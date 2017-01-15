@@ -15,7 +15,7 @@ class Card4 extends Component {
         <img src="https://s.bsd.net/bernie16/main/page/-/website/fb-share.png" alt="Card Image" height="200px" width="100%"/>
         <div className="card">
           <div className="leftContainer">
-            <h2> Title: Bernie </h2>
+            <h2> Title: Bernie4 </h2>
           </div>
           <div className="leftContainer">
             <div>  Description: Description for Bernie </div>
